@@ -1,13 +1,22 @@
 <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Toxique Accueil </title>
+  <link rel="stylesheet" href="./style.css">
 
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TOXIQUE</title>
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caprasimo&family=Press+Start+2P&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
 </head>
@@ -15,41 +24,37 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#video-section">Accueil</a></li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#topics">Thèmes</a></li>
+        <li><a href="index.html#video-section">Accueil</a></li>
+        <li><a href="index.html#about">À propos</a></li>
+        <li><a href="index.html#topics">Thèmes</a></li>
         <li><a href="outils.html">Outils</a></li>
         <li><a href="socialmeter.html">SocialMeter</a></li>
       </ul>
     </nav>
   </header>
 
-
-   <!-- Section vidéo et titre -->
   <section id="video-section">
-    <video id="bg-video" autoplay loop muted playsinline>
-      <source src="URL_DE_TA_VIDEO_DE_FOND.mp4" type="video/mp4">
-      Votre navigateur ne supporte pas la vidéo.
-    </video>
-
     <div class="video-overlay">
       <h1 id="titre">TOXIQUE</h1>
       <button id="trailer-btn">Voir le trailer</button>
     </div>
+    <video autoplay loop muted>
+      <source src="video1.mov" type="video/quicktime">
+    </video>
+    
+   <!-- Modale pour la vidéo du trailer -->
+<div id="videoModal" class="modal" style="display: none;">
+<div class="modal-content">
+<span class="close">&times;</span>
+<video id="trailerVideo" controls>
+<source src="TOXIQUE01.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+
   </section>
 
-  <!-- Modale pour trailer -->
-  <div id="videoModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <video id="trailerVideo" controls>
-        <source src="URL_DE_TA_VIDEO_TRAILER.mp4" type="video/mp4">
-        Votre navigateur ne supporte pas la vidéo.
-      </video>
-    </div>
-  </div>
 
-  <!-- Section À propos -->
   <section id="about">
     <div class="about-content">
       <p>
@@ -251,9 +256,12 @@
     <p>Lucas & Mathilde</p>
     <p>&copy; 2025 TOXIQUE. Tous droits réservés.</p>
   </footer>
-  
-  <!-- partial -->
-  <script  src="./script.js"></script>
 </body>
 </html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
+
 
