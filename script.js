@@ -73,26 +73,29 @@ document.addEventListener("DOMContentLoaded", function () {
     adjustAnimationSpeed(); // Appel initial
 });
 
-// Code modale trailer
-    const trailerBtn = document.getElementById('trailer-btn');
-    const modal = document.getElementById('videoModal');
-    const closeBtn = document.querySelector('.close');
-    const trailerVideo = document.getElementById('trailerVideo');
+document.getElementById('trailer-btn').addEventListener('click', function() {
+var modal = document.getElementById('videoModal');
+var video = document.getElementById('trailerVideo');
 
-    trailerBtn.addEventListener('click', () => {
-        modal.style.display = 'flex';
-        trailerVideo.play();
-    });
+modal.style.display = 'flex'; // Affiche la modale
+video.play(); // Joue la vidéo
+});
 
-    closeBtn.addEventListener('click', () => {
-        modal.style.display = 'none';
-        trailerVideo.pause();
-    });
+document.querySelector('.close').addEventListener('click', function() {
+var modal = document.getElementById('videoModal');
+var video = document.getElementById('trailerVideo');
 
-    window.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-            trailerVideo.pause();
-        }
-    });
+modal.style.display = 'none'; // Cache la modale
+video.pause(); // Met la vidéo en pause
+});
+
+// Fermer la modale si on clique en dehors de la vidéo
+window.addEventListener('click', function(event) {
+var modal = document.getElementById('videoModal');
+var video = document.getElementById('trailerVideo');
+
+if (event.target === modal) {
+modal.style.display = 'none';
+video.pause();
+}
 });
