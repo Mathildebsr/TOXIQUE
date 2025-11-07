@@ -1,0 +1,115 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  background-color: #290046;
+  color: white;
+
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  z-index: 2;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ccff33;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #9ef01a;
+}
+
+.title1 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 110px;
+  background-color:#290046;
+  font-color:white;
+}
+
+h1 {
+  padding:100px 0;
+}
+
+/* Section principale des outils */
+.tools-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding :20px 0;
+  background-color: #ccff33;
+}
+
+.bubble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #290046;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin-top:30px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  opacity:0.9;
+}
+
+.bubble:hover .circle {
+  transform:scale(1.2);
+}
+
+.bubble:hover h2 {
+  color:white;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'bebas neue';
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #290046;
+  text-align: center;
+  padding: 30px 0;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer p:first-child {
+  font-weight: bold;
+}
+
+footer p:last-child {
+  font-style: italic;
+}
+
+footer p:hover {
+  color: #ccff33;
+}

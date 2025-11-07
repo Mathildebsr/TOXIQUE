@@ -1,0 +1,199 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  background-color: #290046;
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  z-index: 2;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ccff33;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #9ef01a;
+}
+
+.title1 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 270px;
+  transition: opacity 10s linear;
+  animation: fadeOut 30s forwards;
+  margin-top:100px;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+
+#sommeil-description {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 900px;
+  margin-top: -60px;
+  margin-bottom: 120px;
+  font-family: "Press Start 2P", sans-serif;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* Section avec effet d'écriture */
+#typing-effect {
+  background: linear-gradient(180deg, #290046, #ccff33);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#typing-effect .card {
+  max-width: 800px; /* Carte plus large */
+  min-height: 400px;
+  height: auto; 
+  margin: 0 auto;
+  padding: 20px 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-family: "Press Start 2P", sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Assure que le titre est bien en haut */
+  overflow: hidden;
+}
+
+#typing-effect h2 {
+  font-size: 24px;
+  color: #6a11cb;
+  margin-bottom: 20px;
+  text-align: center; /* Aligne le titre en haut à gauche */
+}
+
+#dynamic-text {
+  font-size: 16px; /* Texte réduit légèrement pour un long contenu */
+  color: #333;
+  line-height: 1.6; /* Espacement entre les lignes */
+  overflow: hidden; /* Empêche tout débordement de texte */
+  text-align: justify; /* Justifie le texte pour un rendu soigné */
+  white-space: pre-wrap; /* Respecte les sauts de ligne si présents */
+  animation: typing 15s steps(100, end), blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #6a11cb;
+  }
+}
+
+/* Section quiz */
+#quiz-section {
+  background: linear-gradient(180deg, #ccff33, #290046);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.quiz-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #1e1e2f;
+  border-radius: 15px;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.quiz-card h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #ccff33;
+}
+
+.quiz-card button {
+  background: #6a11cb;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Press Start 2P", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quiz-card button:hover {
+  background: #9ef01a;
+}
+
+#quiz-feedback {
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+#quiz-score {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ccff33;
+}
+
+/* Footer styling */
+footer {
+  background-color: #290046; /* Fond sombre pour le footer */
+  text-align: center;
+  padding: 30px 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 15px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer p:first-child {
+  font-weight: bold;
+}
+
+footer p:last-child {
+  font-style: italic;
+}
+
+footer p:hover {
+  color: #ccff33;
+}

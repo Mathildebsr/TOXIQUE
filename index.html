@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Toxique Accueil </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOXIQUE</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caprasimo&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html#video-section">Accueil</a></li>
+        <li><a href="index.html#about">À propos</a></li>
+        <li><a href="index.html#topics">Thèmes</a></li>
+        <li><a href="outils.html">Outils</a></li>
+        <li><a href="socialmeter.html">SocialMeter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="video-section">
+    <div class="video-overlay">
+      <h1 id="titre">TOXIQUE</h1>
+      <button id="trailer-btn">Voir le trailer</button>
+    </div>
+    <video autoplay loop muted>
+      <source src="video1.mov" type="video/quicktime">
+    </video>
+    
+   <!-- Modale pour la vidéo du trailer -->
+<div id="videoModal" class="modal" style="display: none;">
+<div class="modal-content">
+<span class="close">&times;</span>
+<video id="trailerVideo" controls>
+<source src="TOXIQUE01.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+
+  </section>
+
+
+  <section id="about">
+    <div class="about-content">
+      <p>
+        Ce projet vise à sensibiliser les utilisateurs sur les méfaits des réseaux sociaux,
+        leurs impacts sur la santé mentale, les relations humaines, et plus encore.
+      </p>
+    </div>
+  </section>
+
+  <section id="slider">
+
+<div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <a href="sommeil.html">
+                    <img src="https://i.ibb.co/rMzwbq7/IMG-1779.jpg" alt="Sommeil">
+                    <h3>Sommeil</h3>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="dependance.html">
+                    <img src="https://i.ibb.co/87Vxfgj/IMG-7536.jpg" alt="Dependance">
+                    <h3>Dépendance</h3>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="stress.html">
+                    <img src="https://i.ibb.co/1J76DnY/IMG-1785.jpg" alt="Stress">
+                    <h3>Stress, Trouble de l'humeur & Depression</h3>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="tdah.html">
+                    <img src="https://i.ibb.co/crz6Mdx/IMG-1786.jpg" alt="TDAH">
+                    <h3>TDAH & Trouble de la mémoire</h3>
+                </a>
+            </div>
+          <div class="carousel-item">
+                <a href="danger.html">
+                    <img src="https://i.ibb.co/Vw9XcpJ/IMG-1793.jpg" alt="Danger">
+                    <h3>Danger des réseaux</h3>
+                </a>
+            </div>
+          <div class="carousel-item">
+                <a href="influence.html">
+              <img src="https://i.ibb.co/tx7rJhq/IMG-1798.jpg" alt="influence">
+                    <h3>Influence négative</h3>
+            </a>
+          </div>
+            <div class="carousel-item">
+                <a href="influenceurs.html">
+                    <img src="https://i.ibb.co/Rv2zvvs/IMG-1789.jpg" alt="influenceurs">
+                    <h3>Influenceurs</h3>
+                </a>
+          </div>
+  </div>
+    </div>
+  </section>
+  
+  <section id="topics">
+   <div class="outer-circle">
+    <!-- Répétition des 7 grands cercles avec titres -->
+    <div class="container" id="circle1">
+    <div class="big-circle">
+      <span class="circle-title">Sommeil</span>
+
+      <a href="lumiere-bleue.html">
+        <div class="small-circle right" id="circle1-right">
+          <span class="small-circle-title">Impact Écran & Lumière bleue</span>
+        </div>
+      </a>
+      <a href="scroll.html">
+        <div class="small-circle left" id="circle1-left">
+          <span class="small-circle-title">Algorithme & Scroll</span>
+        </div>
+      </a>
+    </div>
+  </a>
+</div>
+
+<div class="container" id="circle2">
+    <div class="big-circle">
+      <span class="circle-title">Dépendance</span>
+      <a href="fomo.html">
+        <div class="small-circle right" id="circle2-right">
+          <span class="small-circle-title">FOMO</span>
+        </div>
+      </a>
+      <a href="algo.html">
+        <div class="small-circle bottom" id="circle2-bottom">
+          <span class="small-circle-title">Algorithme</span>
+        </div>
+      </a>
+      <a href="dopamine.html">
+        <div class="small-circle left" id="circle2-left">
+          <span class="small-circle-title">Dopamine & Circuit de récompense</span>
+        </div>
+      </a>
+    </div>
+  </a>
+</div>
+
+<div class="container" id="circle3">
+    <div class="big-circle">
+      <span class="circle-title">Stress,Trouble Humeur & Depression</span>
+    </div>
+  </a>
+</div>
+
+<div class="container" id="circle4">
+    <div class="big-circle">
+      <span class="circle-title">TDAH & Trouble de la mémoire</span>
+      <a href="ecole.html">
+        <div class="small-circle right" id="circle4-right">
+          <span class="small-circle-title">Ecole & Circuit de récompense</span>
+        </div>
+      </a>
+      <a href="memoire.html">
+        <div class="small-circle left" id="circle4-left">
+          <span class="small-circle-title">Trouble de la mémoire</span>
+        </div>
+      </a>
+    </div>
+  </a>
+</div>
+
+<div class="container" id="circle5">
+    <div class="big-circle">
+      <span class="circle-title">Influenceurs</span>
+      <a href="comparaison.html">
+        <div class="small-circle right" id="circle5-right">
+          <span class="small-circle-title">Comparaison toxique</span>
+        </div>
+      </a>
+      <a href="politique.html">
+        <div class="small-circle bottom" id="circle5-bottom">
+          <span class="small-circle-title">Influence politique</span>
+        </div>
+      </a>
+      <a href="arnaque.html">
+        <div class="small-circle left" id="circle5-left">
+          <span class="small-circle-title">Arnaque & Manipulation</span>
+        </div>
+      </a>
+    </div>
+  </a>
+</div>
+
+<div class="container" id="circle6">
+    <div class="big-circle">
+      <span class="circle-title">Danger des réseaux</span>
+      <a href="predateurs.html">
+        <div class="small-circle top" id="circle6-top">
+          <span class="small-circle-title">Cyberharcelement & Prédateur</span>
+        </div>
+      </a>
+      <a href="fakenews.html">
+        <div class="small-circle right" id="circle6-right">
+          <span class="small-circle-title">Fake news & Deepfake</span>
+        </div>
+      </a>
+      <a href="donnees.html">
+        <div class="small-circle bottom" id="circle6-bottom">
+          <span class="small-circle-title">Récolte de données</span>
+        </div>
+      </a>
+      <a href="revengeporn.html">
+        <div class="small-circle left" id="circle6-left">
+          <span class="small-circle-title">Revenge Porn</span>
+        </div>
+      </a>
+    </div>
+  </a>
+</div>
+
+<div class="container" id="circle7">
+    <div class="big-circle">
+      <span class="circle-title">Influence négative</span>
+      <a href="hypersexualisation.html">
+        <div class="small-circle top" id="circle7-top">
+          <span class="small-circle-title">Hypersexualisation</span>
+        </div>
+      </a>
+      <a href="trend.html">
+        <div class="small-circle right" id="circle7-right">
+          <span class="small-circle-title">Trend dangereuse & Mauvais exemple</span>
+        </div>
+      </a>
+    </div>
+  </a>
+</div>
+
+</section>
+
+
+  <footer>
+    <p1>Toxique : Méfaits des réseaux sociaux</p1>
+    <p>Projet Synthèse DNMADE Gobelins</p>
+    <p>Lucas & Mathilde</p>
+    <p>&copy; 2025 TOXIQUE. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
