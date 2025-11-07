@@ -37,14 +37,9 @@ nav a:hover {
   text-align: center;
 }
 
-#video-section video#bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
+#video-section video {
   width: 100%;
   height: auto;
-  object-fit: cover;
-  z-index: 1;
 }
 
 .video-overlay {
@@ -54,14 +49,13 @@ nav a:hover {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  z-index: 2;
 }
 
 .video-overlay h1 {
   font-size: 35rem;
   margin-top: -10;
   margin: 0;
-  z-index:2;
+  z-index:1;
 }
 
 #trailer-btn {
